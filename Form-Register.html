@@ -42,71 +42,102 @@
     <!-- start codes -->
 
     <div>
-        <h1>Form Register</h1>
-        <form>
-            <table>
-                <tr>
-                    <td><label for="uname">Adınız: </label></td>
-                    <td> <input type="text" id="uname" name="uname" placeholder="Your Name" required
-                            title="write your name" autofocus></td>
-                </tr>
-                <tr>
-                    <td><label for="surname">Soyadınız: </label></td>
-                    <td><input type="text" id="surname" name="surname" placeholder="Your Surname" required
-                            title="write your surname"></td>
-                </tr>
-                <tr>
-                    <td><label for="uemail">Email:
 
-                        </label></td>
-                    <td>
-                        <input type="email" id="uemail" name="uemail" placeholder="Your Email" required
-                            title="write your email">
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="upassword">Password: </label></td>
-                    <td>
-                        <input type="password" id="upassword" name="upassword" placeholder="Your password" required
-                            title="write your password" minlength="3" maxlength="10" pattern="[a-zA-Z0-9]{3,10}">
-                        <!--pattern="[a-zA-Z0-9]{3,10} min3 maks 10 olacak şekilde küçük harfler ve büyük harfler ve 0 dan 9 a rakar girebilirsin-->
-                    </td>
-                </tr>
-                <!--GENDER-->
+        <br>
+        <div class="register_form">
+            <h3 class="header">Form Register</h3>
+            <h4 class="title">Welcome</h4>
+            <form>
+                <table>
+                    <tr>
+                        <td><span for="username">Username: </span></td>
+                        <td>
+                            <div class="register_container"><input type="text" id="username" name="username"
+                                    class="miuul_input" placeholder="Your username" required title="write your username"
+                                    autofocus>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span for="uname">Name: </span></td>
+
+                        <td>
+                            <div class="register_container">
+                                <input type="text" id="uname" name="uname" class="miuul_input" placeholder="Your name"
+                                    required title="write your name">
+                            </div>
+
+                        </td>
+                    </tr>
+        </div>
+        </tr>
+        <tr>
+            <td><span for="surname">Surname: </span></td>
+            <td>
+                <div class="register_container"><input type="text" id="surname" name="surname" class="miuul_input"
+                        placeholder="Your Surname" required title="write your surname">
+                </div>
+            </td>
+
+        </tr>
+        <tr>
+            <td><span for="uemail">Email:
+
+                </span></td>
+            <td>
+                <div class="register_container">
+                    <input type="email" id="uemail" name="uemail" placeholder="Your Email" class="miuul_input" required
+                        title="write your email">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><span for="upassword">Password: </span></td>
+            <td>
+                <div class="register_container">
+                    <input type="password" id="upassword" name="upassword" class="miuul_input"
+                        placeholder="Your password" required title="write your password" minlength="3" maxlength="10"
+                        pattern="[a-zA-Z0-9]{3,10}">
+                    <!--pattern="[a-zA-Z0-9]{3,10} min3 maks 10 olacak şekilde küçük harfler ve büyük harfler ve 0 dan 9 a rakar girebilirsin-->
+                </div>
+            </td>
+        </tr>
+        <!-- GENDER
                 <tr>
                     <td><label>Gender: </label></td>
                     <td>
                         <input type="radio" id="female" name="gender" checked>Female
                         <input type="radio" id="male" name="gender" checked>Male
                     </td>
-                </tr>
-                <!--DATE-->
-                <tr>
+                </tr> -->
+        <!--DATE-->
+        <!-- <tr>
                     <td><label for="udate">Date: </label></td>
                     <td>
                         <input type="datetime-local" id="udate" name="udate">
 
                     </td>
-                </tr>
+                </tr> -->
 
 
-                <tr>
+        <!-- <tr>
                     <td><label for="phone">Phone:
 
                         </label></td>
                     <td> <input type="tel" id="phone"></td>
 
-                </tr>
-                <tr>
-                    <td><label>:</label></td>
-                    <td><input type="reset">
-                        <button type="submit">Gönder</button>
-                    </td>
+                </tr> -->
+        <tr>
+            <td><label>:</label></td>
+            <td><button type="submit">Clear</button>
+                <button type="submit">Send</button>
+            </td>
 
-                </tr>
+        </tr>
 
-            </table>
+        </table>
         </form>
+    </div>
     </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
