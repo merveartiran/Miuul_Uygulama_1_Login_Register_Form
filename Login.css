@@ -88,7 +88,7 @@ input {
     padding: 1rem;
     padding-left: 1rem;
     background-color: #d0d2d3;
-    box-shadow: 6px 6px 6px #1c2631, -6px -6px 6px #1c2631;
+    box-shadow:inset 3px 3px 5px #142e4a, -3px -3px 5px#142e4a;
     height: 3rem;
 }
 
